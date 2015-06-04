@@ -1,0 +1,665 @@
+
+body {
+    background-color: #1b1f2d;
+    background-image: url(../images/bg.jpg);
+}
+
+h1,
+.countdown {
+    font-family: 'Merriweather', serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    max-width:820px;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+.container img {
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+.pr .container {
+    margin-top: 8%;
+}
+
+.countdown {
+    font-size: 1.4em;
+    color: #cebca5;
+    margin-top:2em;
+    letter-spacing:0.7em;
+}
+
+.countdown h1 {
+    padding: 0;
+    margin:0;
+}
+
+.teaser {
+    max-width: 500px;
+    text-align:center;
+    margin: 2em auto;
+}
+
+.teaser img {
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+}
+
+.pr .teaser {
+    margin-top: 6%;
+    padding-bottom: 6%;
+    margin-bottom: 0;
+}
+
+.logo {
+
+}
+
+.logo img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+.more {
+    opacity: 0;
+    transition: opacity 1.2s ease, color 0.4s ease, background-color 0.4 ease;
+    font-size: 1.3em;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.2);
+    padding: 12px 70px;
+    border-radius: 6px;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    color: #A7C5D6;
+    border: 2px solid;
+    margin: 20px 0 0px 0;
+}
+
+.more:hover {
+    color: #fff;
+    background-color: rgba(70,70,70,0.2);
+}
+
+.banner {
+    background-image: url(../images/ng-retribution-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 820px;
+    background-position: center;
+    
+}
+
+.banner h1 {
+    padding: 12px;
+    margin: 54px 0 0 0;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 1.9em;
+    text-shadow: 0px 2px 4px rgba(0,0,0,1);
+    color: #D5D4C2;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.banner iframe {
+    width: 100%;
+    height: 230px;
+}
+
+.banner .more {
+    background-color: rgba(0,0,0,0.7);
+    margin: 26px auto;
+    padding: 12px 0px;
+    width: 200px;
+}
+
+.more span.pause:before,
+.more span.play:before {
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: -8px;
+}
+
+.more span.pause:before {
+    content: 'II';
+}
+
+.more span.play:before {
+    content: '\25BA';
+}
+
+.lineup,
+.banner {
+    width: 820px;
+    height: 230px;    
+    border: 1px solid rgba(213, 212, 194,0.4);
+    border-right: none;
+    border-left: none;
+    padding: 20px 0;
+}
+
+.lineup img,
+.banner img {
+    height: auto;
+    max-width: 100%;
+}
+
+.borders {
+    border: 1px solid rgba(213, 212, 194,0.4);
+    border-right: none;
+    border-left: none;
+    padding: 6px 0;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.basic-text {
+        text-align: center;
+    color: #D5D4C2;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: normal;
+    letter-spacing: normal;
+    line-height: 1.6255em;
+    padding-top: 22px;
+}
+
+.press-release {
+    text-align: left;
+    color: #D5D4C2;
+    font-family: 'Merriweather', serif;
+    font-size: 1.063em;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: normal;
+    letter-spacing: normal;
+    line-height: 1.6255em;
+
+    padding-top: 22px;
+}
+
+.press-release::first-letter {
+    font-size: 3.175em;
+    float: left;
+    line-height: 38px;
+    padding: 10px 9px 0 0;
+}
+
+/*.press-release img {
+    height: auto;
+    max-width: 31%;
+    float: right;
+    border: 1px solid rgba(213, 212, 194,0.4);
+    margin: 7px 3px 4px 14px;
+}*/
+
+.press-release .quote-area {
+    padding: 30px 40px 30px 35px;
+    background-color: rgba(0,0,0,0.3);
+    border-left: 5px solid rgba(167, 197, 214,0.8);
+    font-style: italic;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #A7C5D6;
+}
+
+.press-release .quote-area .quote:before {
+    content:'\201C';
+}
+
+.press-release .quote-area .quote:after {
+    content:'\201D';
+}
+
+.press-release .quote-area .author {
+    display: block;
+    text-align: right;
+    margin-top: 0.6em;
+    margin-bottom: -0.6em;
+}
+
+.press-release .quote-area .author:before {
+    content:'\2014';
+}
+
+.press-release:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+.album-cover {
+    width: 380px;
+    height: 380px;
+    float: right;
+    box-shadow: 0px 10px 60px 4px rgba(0,0,0,0.8);
+    margin-right: 20px !important;
+}
+
+.press-release h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.9em;
+    padding: 0 0 10px 0;
+    margin: 80px 0 30px 0;
+    border-bottom: 1px solid rgba(213, 212, 194,0.4);
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+.tracks {
+    font-size: 0.9em;
+    line-height: 1.7em;
+    float: right;
+    text-align: right;
+    list-style-position: inside;
+    padding-right: 38px;
+    margin-right: 40px;
+    border-right: 1px dotted rgba(213, 212, 194,0.2);
+    margin-top: 0px;
+}
+
+
+.tracks span {
+    position: relative;
+    left: 6px;
+}
+
+.footer {
+    margin: 10% auto 0;
+    width: 100%;
+    z-index: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer li {
+    display: inline-block;
+    width: 9em;
+}
+
+.footer img {
+    margin: 0 auto;
+    height: auto;
+    vertical-align: middle;
+    max-width: 50%;
+    padding: 1.5em;
+}
+
+
+.corner {
+    display: inline-block;
+    position:fixed;
+    width: 630px;
+    height: 630px;
+    z-index: -1;
+    opacity: 0;
+    background-image: url(../images/corner.png);
+
+}
+
+.corner.top-left {
+    top:0;
+    left: 0;
+}
+
+.corner.top-right {
+    top:0;
+    right: 0;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+
+.corner.bot-right {
+    bottom:0;
+    right: 0;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+
+.corner.bot-left {
+    bottom: 0;
+    left: 0;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+}
+
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 699px) {
+
+      /* Small screen, non-retina */
+
+      .container {
+          /* max-width:320px; */
+      
+          margin: 0 auto;
+          width: 100%;
+    }
+
+    .logo {
+        width:70%;
+        margin: 0 auto;
+    }
+
+    .lineup, 
+    .banner {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .banner {
+        background-size: 490px;
+    }
+
+    .banner h1 {
+        padding: 12px;
+        margin: 10px 0 0 0;
+        font-size: 1em;
+    }
+
+    .banner .more {
+        font-size: 1em;
+        width: 160px;
+        padding: 8px 0;
+        margin: 16px auto;
+    }
+
+    .countdown {
+        font-size: 0.8em;
+        letter-spacing: 0.9em;
+    }
+
+    .more {
+        font-size: 0.9em;
+        padding: 12px 34px;
+
+    }
+
+    .lineup {
+        width: 100%;
+    }
+
+    .logo img {
+        max-width:100%;
+        height:auto;
+    }
+
+    .press-release {
+        width: 92%;
+        margin: 0 auto;
+        font-size: 0.9em;
+    }
+
+    .press-release:first-letter {
+        line-height: 34px;
+        padding: 10px 8px 0 0;
+    }
+
+    .press-release h1 {
+        font-size: 1.3em;
+    }
+
+    .press-release .quote-area {
+        padding: 20px 40px 20px 30px;
+    }
+
+    .album-cover {
+        width: 100%;
+        height:auto;
+        float:none;
+        box-shadow: none;
+    }
+
+    .tracks {
+        float: none;
+        text-align: center;
+        list-style-position: inside;
+        list-style: none;
+        margin: 1em 0 0 0;
+        padding: 0;
+        border: none;
+
+    }
+
+    .teaser img {
+        max-width:70%;
+        height:auto;
+    }
+
+    #countdown {
+        font-size: 0.9em;
+        letter-spacing: 0.2em;
+    }
+
+    .corner {
+        width: 315px;
+        height: 315px;
+        background-size: 315px 315px;
+        opacity: 0.8;
+    }
+    .footer li {
+        width: 6.5em;
+    }
+
+}
+
+
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px) and (max-width: 699px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px) and (max-width: 699px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px) and (max-width: 699px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px) and (max-width: 699px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px) and (max-width: 699px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px) and (max-width: 699px) { 
+
+
+body {
+    background-size: 1000px;
+}
+      /* Small screen, retina, stuff to override above media query */
+      .container {
+          /* max-width:320px; */
+      
+          margin: 0 auto;
+          width: 100%;
+    }
+
+    .logo {
+        width:90%;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        max-width:100%;
+        height:auto;
+    }
+
+    .teaser img {
+        max-width:70%;
+        height:auto;
+    }
+
+    #countdown {
+        font-size: 0.9em;
+        letter-spacing: 0.2em;
+    }
+
+    .album-cover {
+        width: 100%;
+        height:auto;
+        float:none;
+        box-shadow: none;
+    }
+
+    .tracks {
+        float: none;
+        text-align: center;
+        list-style-position: inside;
+        list-style: none;
+        margin: 1em 0 0 0;
+        padding: 0;
+        border: none;
+
+    }
+
+    .corner {
+        width: 315px;
+        height: 315px;
+        background-size: 315px 315px;
+        opacity: 0.8;
+    }
+
+    .footer li {
+        display: inline-block;
+        width: 5em;
+    }
+}
+
+
+
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+
+  /* Medium screen, non-retina */
+
+  .logo img {
+    max-width: 80%;
+  }
+  .teaser {
+    max-width: 60%;
+  }
+  .teaser img {
+    max-width: 100%;
+  }
+
+  #countdown {
+    font-size: 1em;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px) and (max-width: 999px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px) and (max-width: 999px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px) and (max-width: 999px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px) and (max-width: 999px),
+only screen and (                min-resolution: 192dpi) and (min-width: 700px) and (max-width: 999px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 700px) and (max-width: 999px) { 
+
+        .container {
+          /* max-width:320px; */
+      
+          margin: 0 auto;
+          width: 700px;
+    }
+
+    .logo {
+        width:90%;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        max-width:100%;
+        height:auto;
+    }
+
+    .teaser img {
+        max-width:70%;
+        height:auto;
+    }
+
+    #countdown {
+        font-size: 0.9em;
+        letter-spacing: 0.2em;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+  /* Large screen, non-retina */
+    body {
+        /*background-size: cover;*/
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        max-width:820px;
+    }
+    .container img {
+        margin: 0 auto;
+        /* text-align: center; */
+    }
+
+    #countdown {
+        font-size: 1.4em;
+        color: #cebca5;
+        margin-top:2em;
+        letter-spacing:0.8em;
+    }
+
+    .teaser {
+        max-width:400px;
+        text-align:center;
+        margin: 2em auto;
+    }
+
+
+    .teaser img {
+        height: auto;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .logo {
+
+    }
+
+    .logo img {
+        height: auto;
+        max-width: 100%;
+    }
+
+.corner {
+    width: 630px;
+    height: 630px;
+    background-size: 630px 630px;
+    opacity: 1;
+}
+
+
+}

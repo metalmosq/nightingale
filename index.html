@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>nightingale</title>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<img src="images/logo.png">
+	<div id="countdown"></div>
+</body>
+
+
+<script type="text/javascript">
+$("#getting-started").countdown("2014/09/15", function(event) {
+	$(this).text(event.strftime('%D days %H:%M:%S'));
+});
+</script>
+</html>

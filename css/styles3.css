@@ -1,0 +1,360 @@
+
+body {
+    background-color: #1b1f2d;
+    background-image: url(../images/bg.jpg);
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    max-width: 940px;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+.container img {
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+#countdown {
+    font-size: 1.7em;
+    color: #cebca5;
+    margin-top:2em;
+    letter-spacing:1em;
+}
+
+.teaser {
+    max-width: 500px;
+    text-align:center;
+    margin: 2em auto;
+    position: absolute;
+}
+
+.teaser img {
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+}
+
+.logo {
+
+}
+
+.logo img {
+    height: auto;
+    max-width: 100%;
+}
+
+#retribution-cover {
+    position: absolute;
+    top: 140;
+    right: 10;
+    z-index: -1;
+}
+
+#retribution-cover img {
+    height: auto;
+    max-width: 240px;
+}
+
+#countdown {
+    position: absolute;
+}
+
+.footer {
+    margin: 10% auto 0;
+    width: 100%;
+    z-index: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer li {
+    display: inline-block;
+    width: 9em;
+}
+
+.footer img {
+    margin: 0 auto;
+    height: auto;
+    vertical-align: middle;
+    max-width: 50%;
+    padding: 1.5em;
+}
+
+
+.corner {
+    display: inline-block;
+    position:fixed;
+    width: 630px;
+    height: 630px;
+    z-index: -1;
+    opacity: 0;
+
+}
+
+.corner.top-left {
+    top:0;
+    left: 0;
+    background-image: url(../images/corner-top-left.png);
+}
+
+.corner.top-right {
+    top:0;
+    right: 0;
+    background-image: url(../images/corner-top-right.png);
+}
+
+.corner.bot-left {
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/corner-bot-left.png);
+}
+
+.corner.bot-right {
+    bottom:0;
+    right: 0;
+    background-image: url(../images/corner-bot-right.png);
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 699px) {
+
+      /* Small screen, non-retina */
+
+      .container {
+          /* max-width:320px; */
+      
+          margin: 0 auto;
+          width: 320px;
+    }
+
+    .logo {
+        width:90%;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        max-width:100%;
+        height:auto;
+    }
+
+    .teaser img {
+        max-width:70%;
+        height:auto;
+    }
+
+    #countdown {
+        font-size: 0.9em;
+        letter-spacing: 0.2em;
+    }
+
+    .corner {
+        width: 315px;
+        height: 315px;
+        background-size: 315px 315px;
+        opacity: 0.8;
+    }
+    .footer li {
+        width: 5em;
+    }
+
+}
+
+
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px) and (max-width: 699px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px) and (max-width: 699px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px) and (max-width: 699px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px) and (max-width: 699px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px) and (max-width: 699px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px) and (max-width: 699px) { 
+
+
+body {
+    background-size: 1000px;
+}
+      /* Small screen, retina, stuff to override above media query */
+      .container {
+          /* max-width:320px; */
+      
+          margin: 0 auto;
+          width: 320px;
+    }
+
+    .logo {
+        width:90%;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        max-width:100%;
+        height:auto;
+    }
+
+    .teaser img {
+        max-width:70%;
+        height:auto;
+    }
+
+    #countdown {
+        font-size: 0.9em;
+        letter-spacing: 0.2em;
+    }
+
+    .corner {
+        width: 315px;
+        height: 315px;
+        background-size: 315px 315px;
+        opacity: 0.8;
+    }
+
+    .footer li {
+        display: inline-block;
+        width: 5em;
+    }
+}
+
+
+
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+
+  /* Medium screen, non-retina */
+
+  .logo img {
+    max-width: 80%;
+  }
+  .teaser {
+    max-width: 60%;
+  }
+  .teaser img {
+    max-width: 100%;
+  }
+
+  #countdown {
+    font-size: 1em;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px) and (max-width: 999px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px) and (max-width: 999px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px) and (max-width: 999px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px) and (max-width: 999px),
+only screen and (                min-resolution: 192dpi) and (min-width: 700px) and (max-width: 999px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 700px) and (max-width: 999px) { 
+
+        .container {
+          /* max-width:320px; */
+      
+          margin: 0 auto;
+          width: 700px;
+    }
+
+    .logo {
+        width:90%;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        max-width:100%;
+        height:auto;
+    }
+
+    .teaser img {
+        max-width:70%;
+        height:auto;
+    }
+
+    #countdown {
+        font-size: 0.9em;
+        letter-spacing: 0.2em;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+  /* Large screen, non-retina */
+    body {
+        background-size: cover;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        max-width:940px;
+    }
+    .container img {
+        margin: 0 auto;
+        /* text-align: center; */
+    }
+
+    #countdown {
+        font-size: 1.3em;
+        color: #cebca5;
+        margin-top:5.2em;
+        letter-spacing:0.7em;
+        right: 346;
+    }
+
+    .teaser {
+        max-width: 50%;
+        text-align:center;
+        margin: 3.8em auto;
+        right: 354;
+    }
+
+
+    .teaser img {
+        height: auto;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .logo {
+
+    }
+
+    .logo img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    #retribution-cover {
+        right: 30;
+        top: 140;
+    }
+
+    .corner {
+        width: 630px;
+        height: 630px;
+        background-size: 630px 630px;
+        opacity: 1;
+    }
+
+    .footer {
+        right: 80;
+    }
+
+
+}

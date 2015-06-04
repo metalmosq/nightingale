@@ -1,0 +1,99 @@
+<html>
+<head>
+	<title>nightingale</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<img src="images/logo.png">
+		</div>
+		<div class="teaser">
+			<img src="images/album.png">
+		</div>
+		
+		<div id="countdown"></div>
+	</div>
+	<div class="footer">
+		<ul>
+			<li>
+				<a href="http://www.facebook.com/nightingalesweden">
+					<img src="images/sm-facebook.png">
+				</a>
+			</li>
+			<li>
+				<a href="http://www.youtube.com/nightingalesweden">
+					<img src="images/sm-youtube.png">
+				</a>	
+			</li>
+			<li>
+				<a href="http://www.last.fm/music/Nightingale">
+					<img src="images/sm-lastfm.png">
+				</a>	
+			</li>
+		</ul>
+	</div>
+
+	<div class="corner top-left"></div>
+	<div class="corner top-right"></div>
+	<div class="corner bot-left"></div>
+	<div class="corner bot-right"></div>
+</body>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	borderSize();
+
+	setTimeout(function(){
+		contentMid()
+	}, 400);
+
+	$("#countdown").countdown("2014/11/10", function(event) {
+		$(this).text(event.strftime('%-ww %-dd %-Hh %-Mm %-Ss'));
+	});
+
+
+});
+
+$(window).on('resize',function() {
+	contentMid();
+	borderSize();
+});
+
+
+
+function borderSize() {
+	var containerWidth = $(document).width();
+	if (containerWidth < 700) {
+		var borderSize = 350;
+	} else {
+		var borderSize = containerWidth - 600;
+
+		if(borderSize < 800) {
+			borderSize = 1000;
+		}
+
+		if(borderSize < 400) {
+			borderSize = 615;
+		}
+	}
+
+	$('.corner').css('height',borderSize).css('width',borderSize).css('background-size',borderSize).css('opacity','1');
+}
+
+function contentMid() {
+	var containerHeight = $('.container').height();
+	var documentHeight = $(document).height();
+	var midpoint = (documentHeight - containerHeight)/2;
+	var midpointAdjust = (midpoint)/8;
+
+	$('.container').css('margin-top', midpoint-midpointAdjust).css('opacity','1');
+	$('.footer').css('margin-top', midpointAdjust*2).css('opacity','1');
+}
+
+</script>
+</html>
